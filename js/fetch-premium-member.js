@@ -18,7 +18,7 @@ async function renderUsers() {
   let users = await getUsers();
   let html = "";
   users.forEach((user) => {
-    if (user.website === "") {
+    if (user.website == "") {
       console.log("no premium members found");
     } else {
       let htmlSegment = `<div class="busiess_div_premium">
