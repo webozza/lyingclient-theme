@@ -1,13 +1,10 @@
 // Checks for placeholder image
-const isDummyPlaceholder =
-  $("#client-experience-details img").attr("src").indexOf("no.png") > -1;
+let isDummy =
+  $("#client-experience-details img").attr("src").indexOf("assets/no.png") > -1;
 
 // Checks for client experience slug
-const isClientSlug = window.location.href.indexOf("/?experience_slug") > -1;
+let isClientExp = window.location.href.indexOf("/?experience_slug") > -1;
 
-let hideIfDummy = (isDummyPlaceholder, isClientSlug) => {
-  isDummyPlaceholder == true;
-  isClientSlug == true;
+if (isDummy && isClientExp) {
   $(".attachment_div").hide();
-};
-hideIfDummy();
+}
