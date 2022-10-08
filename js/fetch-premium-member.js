@@ -109,6 +109,10 @@ async function sortAnimation() {
   await sortList();
   $(".loader").css("display", "none");
   $(".premium-members-container").css("display", "flex");
+  if ($(".premium-members-container")[0].childNodes.length === 0) {
+    let noResultsMsg = `<p>No results found. <a href="" onclick="history.back()">Please try again.</a></p>`;
+    $("#premium-members-club").append(noResultsMsg);
+  }
 }
 
 setTimeout(function () {
