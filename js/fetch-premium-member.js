@@ -18,7 +18,7 @@ async function renderUsers() {
   let users = await getUsers();
   let html = "";
   users.forEach((user) => {
-    if (user.website === "" || user.website === null) {
+    if (user.website !== "" || user.website !== null) {
       let htmlSegment = `<div class="busiess_div_premium">
   
 			  <div class="business_details_div_parent">
