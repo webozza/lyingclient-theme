@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       LC Masters Solutions
+ * Plugin Name:       LCMS Membership
  * Plugin URI:        https://lyingclient.com
  * Description:       Custom functions to extend GeoDirectory and Paid Membership Pro plugin functionality
  * Version:           2.0.8
