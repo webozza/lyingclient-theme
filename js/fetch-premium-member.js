@@ -19,8 +19,7 @@ async function renderUsers() {
   let html = "";
   users.forEach((user) => {
     console.log(user.website);
-    if (user.website !== "" || user.website !== null) {
-      let htmlSegment = `<div class="busiess_div_premium">
+    let htmlSegment = `<div class="busiess_div_premium">
   
 			  <div class="business_details_div_parent">
 				  <div class="business_details_div_flex">
@@ -43,8 +42,8 @@ async function renderUsers() {
 					  <div class="business_contact_info">
 						  <p class="business_phone"></p>
 						  <p class="business_location">${user.clients_zip_code} ${
-        user.business_name
-      }</p>
+      user.business_name
+    }</p>
 					  </div>
 				  </div>
 				  <div class="business_website_btn_div">
@@ -57,8 +56,8 @@ async function renderUsers() {
   
 		  </div>`;
 
-      html += htmlSegment;
-    }
+    html += htmlSegment;
+    console.log(user.website);
   });
 
   let container = document.querySelector(".premium-members-container");
