@@ -29,14 +29,14 @@ async function renderUsers() {
 				  </div>
 				  <div class="business_brand_div_parent">
 					  <div class="business_brand_logo">
-						  <img class="business_brand_logo_img" src="/wp-content/plugins/d-base-geodirectory-custom-functions/shortcodes/assets/lying_client_1.png">
+						  <img class="business_brand_logo_img" src="/wp-content/plugins/lcms-geodirectory-custom-functions/shortcodes/assets/lying_client_1.png">
 					  </div>
 				  </div>
 			  </div>
 			  <div class="business_contact_info_div">
 				  <div class="business_contact_info_div_flex">
 					  <div class="business_logo">
-						  <img class="business_logo_img" src="/wp-content/plugins/d-base-geodirectory-custom-functions/shortcodes/assets/lying_client.png">
+						  <img class="business_logo_img" src="/wp-content/plugins/lcms-geodirectory-custom-functions/shortcodes/assets/lying_client.png">
 					  </div>
 					  <div class="business_contact_info">
 						  <p class="business_phone"></p>
