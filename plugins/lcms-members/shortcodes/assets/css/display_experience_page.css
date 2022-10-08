@@ -1,0 +1,70 @@
+#my-client-experience-container li a.active {
+    font-weight: bold;
+}
+
+.attachment_popup_div {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005e;
+    justify-content: center;
+    z-index: 99999;
+    display: none;
+}
+
+.attachment_popup_div .attachment_popup_img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid red;
+}
+
+.attachment_popup_div .attachment_popup_img img {
+    height: 80%;
+    margin: 3rem 0;
+}
+
+.attachment_popup_div_close {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    content: "x";
+    background: red;
+    padding: 5px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.attachment_popup_div.active {
+    display: block;
+    padding: 4rem;
+    overflow-y: auto;
+}
+
+
+.exp_edit_client_attachement_parent_div{
+    padding: 2rem;
+}
+
+.exp_edit_client_attachement_parent_div .exp_edit_client_attachement_image_preview{
+    display: none;
+}
+
+.exp_edit_client_attachement_parent_div .exp_edit_client_attachement_image_preview.active{
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .attachment_popup_div_close {
+        top: 1%;
+        right: 45%;
+    }
+
+    .attachment_popup_div .attachment_popup_img img {
+        width: 50%;
+        height: fit-content;
+    }
+}

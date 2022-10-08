@@ -1,0 +1,100 @@
+/* SEARCH EXPERIENCE PAGE CSS == SHAKIL*/
+
+.busiess_div_premium {
+    padding: 1.5rem;
+    padding-top: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px black;
+    width: 40%;
+}
+
+.busiess_div_premium .business_details_div_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.busiess_div_premium .business_details_div_parent .business_details_div_flex .business_details_div p {
+    margin-bottom: 0px;
+}
+
+.busiess_div_premium .business_details_div_parent .business_details_div_flex .business_details_div p.business_name {
+    font-size: 2rem;
+    color: #b33f40;
+}
+
+.busiess_div_premium .business_details_div_parent .business_details_div_flex .business_logo_img {
+    height: 60px;
+    width: 80px;
+}
+
+.busiess_div_premium .business_brand_div_parent .business_brand_logo_img {
+    height: 100px;
+    width: 170px;
+	box-shadow: 5px 10px 10px #20202059;
+}
+
+.busiess_div_premium .business_contact_info_div {
+    margin-top: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    padding: 1rem;
+}
+
+.busiess_div_premium .business_contact_info_div .business_contact_info {
+    width: 100%;
+}
+
+.busiess_div_premium .business_contact_info_div .business_contact_info p {
+    margin-bottom: 0px;
+}
+
+.busiess_div_premium .business_contact_info_div .business_contact_info_div_flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.busiess_div_premium .business_website_btn_div {
+    text-align: right;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.busiess_div_premium .business_website_btn_div .business_website_btn {
+    background: red;
+    width: 100%;
+    color: white;
+    padding: 10px 40px;
+    display: block;
+}
+
+@media only screen and (max-width: 780px) {
+    .busiess_div_premium {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .busiess_div_premium {
+        width: 100%;
+    }
+
+    /* .busiess_div_premium .business_contact_info_div {
+        display: block;
+    }
+
+    .busiess_div_premium .business_website_btn_div {
+        margin-top: 20px;
+        text-align: center;
+    } */
+
+    /* .busiess_div_premium .business_website_btn_div .business_website_btn {
+        padding: 10px 40px;
+        width: 100%;
+        display: block;
+    } */
+}
