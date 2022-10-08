@@ -23,7 +23,7 @@ async function renderUsers() {
 			  <div class="business_details_div_parent">
 				  <div class="business_details_div_flex">
 					  <div class="business_details_div">
-						  <p class="business_name">${user.yoast_head_json.title.split("-")[0]}</p>
+						  <p class="business_name">${user.business_name}</p>
 						  <p class="business_category">${$("h1 strong").text()}</p>
 					  </div>
 				  </div>
