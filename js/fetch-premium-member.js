@@ -110,8 +110,11 @@ async function sortAnimation() {
   $(".loader").css("display", "none");
   $(".premium-members-container").css("display", "flex");
   if ($(".premium-members-container")[0].childNodes.length === 0) {
-    let noResultsMsg = `<p style="text-align:center;">No results found. <a href="javascript:void(0)" onclick="history.back()">Please try again.</a></p>`;
+    let noResultsMsg = `<p class="no-results-msg" style="text-align:center;">No results found. <a href="javascript:void(0)" onclick="history.back()">Please try again.</a></p>`;
     $("#premium-members-club").append(noResultsMsg);
+    setTimeout(() => {
+      $(".no-results-msg").trigger("click");
+    }, 2000);
   }
 }
 
