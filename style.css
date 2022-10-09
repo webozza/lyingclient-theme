@@ -8,7 +8,117 @@
  * Tags: custom-menu, custom-logo, entertainment, one-column, two-columns, left-sidebar, e-commerce, right-sidebar, custom-colors, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog
  * AMP: true
  */
+#add-experience-button {
+  width: 59%;
+}
+#add-experience-button a {
+  float: right;
+  width: 200px;
+  margin-top: 10px !important;
+  margin-right: 5px !important;
+  background: #000;
+  border: 0px;
+  padding: 10px 0px 10px 0px;
+}
+#add-experience-button a:hover {
+  background: #b33f40;
+  border: 0px;
+}
+.exp_add_client_attachement_addon:hover {
+  background: #b33f40;
+  border: 1px solid #000;
+}
 
+.bsui:hover {
+  background: #b33f40 !important;
+  border: 0px;
+  color: #fff !important;
+}
+.btnPrevious:hover {
+  background: #b33f40;
+  border: 0px;
+}
+.tab-content > .active {
+  display: block;
+  margin-left: 7px !important;
+}
+.step-two-prevent > .nav-link,
+.nav-link {
+  color: #000 !important;
+}
+.exp_add_client_attachement_addon {
+  width: 200px;
+  margin-top: 10px !important;
+  margin-left: 12px;
+  padding: 10px 20px 10px 20px;
+  background: #000;
+}
+.btnPrevious {
+  float: left;
+  width: 200px;
+  margin-top: 10px !important;
+  margin-right: 5px !important;
+  background: #000;
+  border: 0px;
+  padding: 10px 0px 10px 0px;
+}
+.bsui {
+  width: 200px;
+  margin-top: 0px !important;
+  margin-right: 5px !important;
+  padding: 10px 0px 10px 0px;
+  float: left;
+  color: #fff;
+  background: #000 !important;
+  border: 0px !important;
+  margin: 0px 0px 0px 17px;
+}
+.bsui .btn-primary,
+button.bsui.btn-primary {
+  background-color: #000 !important;
+  border: 2px solid #000 !important;
+}
+
+.bsui .btn-primary:hover,
+button.bsui.btn-primary:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
+#premium-members-club form,
+.elementor-element-abda533 form {
+  display: flex;
+}
+#place_categories {
+  padding: 0.5em 0.75rem;
+}
+div#premium-members-club:after {
+  content: "";
+  background: url(https://test.fixibug.com/wp-content/uploads/2022/10/lying_client_11.png)
+    no-repeat;
+  background-position: center center;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  background-size: 285px 250px;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen (max-width: 900px) {
+  div#premium-members-club:after {
+    width: 250px !important;
+    height: 320px !important;
+    background-size: 250px 220px !important;
+  }
+}
+@media only screen (max-width: 767px) {
+  div#premium-members-club:after {
+    background: url() no-repeat;
+    width: 0px;
+    height: 0px;
+  }
+}
 /*-- Add experience page --*/
 #add-experience-button {
   width: 59%;

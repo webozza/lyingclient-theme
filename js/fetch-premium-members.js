@@ -18,12 +18,7 @@ async function renderUsers() {
   let users = await getUsers();
   let html = "";
   users.forEach((user) => {
-    if (user.website == "") {
-      // not premium member
-      console.log("no premium members found");
-    } else {
-      // premium member
-      let htmlSegment = `<div class="busiess_div_premium">
+    let htmlSegment = `<div class="busiess_div_premium">
   
 			  <div class="business_details_div_parent">
 				  <div class="business_details_div_flex">
@@ -46,8 +41,8 @@ async function renderUsers() {
 					  <div class="business_contact_info">
 						  <p class="business_phone"></p>
 						  <p class="business_location">${user.clients_zip_code} ${
-        user.business_name
-      }</p>
+      user.business_name
+    }</p>
 					  </div>
 				  </div>
 				  <div class="business_website_btn_div">
@@ -60,8 +55,7 @@ async function renderUsers() {
   
 		  </div>`;
 
-      html += htmlSegment;
-    }
+    html += htmlSegment;
   });
 
   let container = document.querySelector(".premium-members-container");
@@ -118,9 +112,7 @@ async function sortAnimation() {
   if ($(".premium-members-container")[0].childNodes.length === 0) {
     let noResultsMsg = `<p class="no-results-msg" style="text-align:center;">No results found. <a href="javascript:void(0)" onclick="history.back()">Please try again.</a></p>`;
     $("#premium-members-club").append(noResultsMsg);
-    setTimeout(() => {
-      $(".no-results-msg").trigger("click");
-    }, 2000);
+    $(".no-results-msg").trigger("click");
   }
 }
 
