@@ -1,5 +1,5 @@
 <?php
-/* Template Name: PMC */
+/* Template Name: Premium Member Club */
 get_header();
 
 $html = '<h1>fosjofksdfjsidjf</h1>';
